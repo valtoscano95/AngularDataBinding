@@ -1,0 +1,13 @@
+<main>
+    <div>Input field which updates a property with every keystroke
+        <label for="">Username</label>
+        <br>
+        <input type="text"  [(ngModel)]="username" (keyup)="activateButton()">
+    </div>
+
+    <br>
+    <p>Your username is: {{ username }}</p>
+
+    <button [disabled]="isDisabled" class="btn btn-primary" (click)="resetUser()">Reset User</button>
+
+</main>
